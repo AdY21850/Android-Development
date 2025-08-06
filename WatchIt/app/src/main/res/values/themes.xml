@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.WatchIt" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/main_color</item>
+        <item name="android:windowLightStatusBar">true</item> <!-- Light status bar icons -->
+    </style>
+
+    <!-- Inherit from Base Theme -->
+    <style name="Theme.WatchIt" parent="Base.Theme.WatchIt" />
+
+</resources>

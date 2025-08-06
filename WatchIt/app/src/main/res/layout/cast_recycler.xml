@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_70sdp"
+    android:layout_height="@dimen/_100sdp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/_5sdp">
+
+    <ImageView
+        android:id="@+id/cast_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+
+        android:scaleType="centerCrop"
+        android:src="@drawable/sydney_sweeney"
+        android:background="@drawable/circle_bg"
+        android:clipToOutline="true" />
+
+    <TextView
+        android:id="@+id/cast_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:text="Actor Name"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@android:color/white"
+
+        android:gravity="center"/>
+
+</LinearLayout>

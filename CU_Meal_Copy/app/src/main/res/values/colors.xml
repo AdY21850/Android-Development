@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#C9BBBB</color>
+    <color name="splashbg">#FAF9F5</color>
+    <color name="homescreenbg">#faf0be</color>
+    <color name="homescreenfg">#fffacd</color>
+    <color name="pink">#fff</color>
+</resources>

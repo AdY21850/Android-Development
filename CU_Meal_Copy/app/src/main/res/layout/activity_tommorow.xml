@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homescreen"
+    android:background="@color/homescreenbg">
+
+
+
+    <LinearLayout
+        android:id="@+id/scrolllinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/kushan_script_regular"
+                android:text="Tommorow's menu"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textStyle="italic|bold"
+                android:background="@color/white"/>
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_below="@+id/textview"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/homescreenfg"
+                >
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="30dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="30dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/braekfastimg" />
+
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Breakfast"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textAlignment="center"
+                                />
+
+                            <TextView
+                                android:id="@+id/breakfastt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="retrived data from the data base will be dispalyed here after the updation,if the data is not visible please update via scrolling from bottom to top"
+                                android:textAlignment="center"
+                                android:textSize="17dp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="30dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="30dp"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/lunch" />
+
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Lunch"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textAlignment="center"
+                                />
+
+                            <TextView
+                                android:id="@+id/luncht"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="retrived data from the data base will be dispalyed here after the updation,if the data is not visible please update via scrolling from bottom to top"
+                                android:textAlignment="center"
+                                android:textSize="17dp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="30dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="30dp"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/snacksboys" />
+
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="snacks(Boy's)"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textAlignment="center"
+                                />
+
+                            <TextView
+                                android:id="@+id/snacksbt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="retrived data from the data base will be dispalyed here after the updation,if the data is not visible please update via scrolling from bottom to top"
+                                android:textAlignment="center"
+                                android:textSize="17dp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="30dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="30dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/snacksgirls" />
+
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Snacks (girl's)"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textAlignment="center"
+                                />
+
+                            <TextView
+                                android:id="@+id/snacksgt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="retrived data from the data base will be dispalyed here after the updation,if the data is not visible please update via scrolling from bottom to top"
+                                android:textAlignment="center"
+                                android:textSize="17dp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="30dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="30dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/dinner" />
+
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Dinner"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textAlignment="center"
+                                />
+
+                            <TextView
+                                android:id="@+id/dinnert"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="retrived data from the data base will be dispalyed here after the updation,if the data is not visible please update via scrolling from bottom to top"
+                                android:textAlignment="center"
+                                android:textSize="17dp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="30dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="30dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/southindiandinner" />
+
+                        </androidx.cardview.widget.CardView>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Dinner South Indian"
+                                android:textStyle="bold"
+                                android:textSize="20dp"
+                                android:textAlignment="center"
+                                />
+
+                            <TextView
+                                android:id="@+id/southindiandinnert"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="retrived data from the data base will be dispalyed here after the updation,if the data is not visible please update via scrolling from bottom to top"
+                                android:textAlignment="center"
+                                android:textSize="17dp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:cardCornerRadius="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/bottomlinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/referhome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/home" />
+
+                <TextView
+                    android:id="@+id/hometxtt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/refertexttomorow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/book" />
+
+                <TextView
+                    android:id="@+id/tommorowstxtt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tommorow's menu" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/timingbtnttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/timing" />
+
+                <TextView
+                    android:id="@+id/timingtxtt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Timing" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

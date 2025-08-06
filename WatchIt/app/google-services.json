@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "244282069827",
+    "project_id": "watchit-5eed6",
+    "storage_bucket": "watchit-5eed6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244282069827:android:08e924af8499e91c1f95f6",
+        "android_client_info": {
+          "package_name": "com.example.watchit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrfVIPyMISxNO68njrDkA--G8fpYJLFts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="@dimen/_8sdp"
+    android:radius="@dimen/_20sdp"
+    app:cardCornerRadius="@dimen/_20sdp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Background Image -->
+        <ImageView
+            android:id="@+id/movieImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            />
+
+        <!-- Dark Gradient Overlay for Text Visibility -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_overlay"
+            android:alpha="0.6"/>
+
+        <!-- Text and Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_12sdp"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_gravity="bottom">
+
+            <!-- Movie Title -->
+            <TextView
+                android:id="@+id/movieTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oppenheimer"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"/>
+
+            <!-- Genre -->
+            <TextView
+                android:id="@+id/movieGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History  |  Thriller  |  Drama"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_10sdp"/>
+
+            <!-- Year, Rating & Duration -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/_4sdp"
+                android:gravity="start">
+
+                <TextView
+                    android:id="@+id/movieYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:background="@drawable/rounded_bg"
+                    android:padding="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_6sdp"/>
+
+                <TextView
+                    android:id="@+id/movieRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17+"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:background="@drawable/rounded_bg"
+                    android:padding="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_6sdp"/>
+
+                <TextView
+                    android:id="@+id/movieDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 Hours"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_10sdp"
+                    android:background="@drawable/rounded_bg"
+                    android:padding="@dimen/_6sdp"/>
+            </LinearLayout>
+
+            <!-- Add to Watchlist Button -->
+            <Button
+                android:id="@+id/addToWatchlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add To Watchlist"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/red"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingVertical="@dimen/_6sdp"
+                android:paddingHorizontal="@dimen/_14sdp"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>
