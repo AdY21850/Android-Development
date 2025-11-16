@@ -1,7 +1,19 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.FOREST" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+<resources>
+    <style name="Theme.FOREST" parent="Theme.Material3.Dark.NoActionBar">
+
+        <item name="colorPrimary">@color/Pastel_Green</item>
+        <item name="colorOnPrimary">@color/Deep_Forest_Green</item>
+
+        <item name="colorSurface">@color/Deep_Forest_Green</item>
+
+        <item name="colorOnSurface">@color/Creamy_Linen</item>
+
+        <item name="colorOnSurfaceVariant">@color/Muted_Sage_Grey</item>
+
+        <item name="colorError">@color/Crimson_Red</item>
+        <color name="dot_inactive">@android:color/white</color>
+        <color name="dot_active">@color/Pastel_Green</color> <!-- or Deep_Forest_Green -->
+
+        <item name="android:windowBackground">@color/Deep_Forest_Green</item>
     </style>
 </resources>

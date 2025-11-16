@@ -1,9 +1,17 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.FOREST" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-    </style>
+<resources>
+    <style name="Theme.FOREST" parent="Theme.Material3.Light.NoActionBar">
 
-    <style name="Theme.FOREST" parent="Base.Theme.FOREST" />
+        <item name="colorPrimary">@color/Deep_Forest_Green</item>
+        <item name="colorOnPrimary">@color/Pure_Cotton_White</item>
+
+        <item name="colorSurface">@color/Pure_Cotton_White</item>
+
+        <item name="colorOnSurface">@color/Earth_Brown</item>
+
+        <item name="colorOnSurfaceVariant">@color/Warm_Stone</item>
+
+        <item name="colorError">@color/Crimson_Red</item>
+
+        <item name="android:windowBackground">@color/Pure_Cotton_White</item>
+    </style>
 </resources>

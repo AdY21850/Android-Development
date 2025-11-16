@@ -8,6 +8,8 @@
     <color name="Creamy_Linen">#E4DECC</color>
     <color name="Off_White_Cream">#FCF8EC</color>
     <color name="Pure_Cotton_White">#FAF9F5</color>
+    <color name="dot_inactive">@android:color/white</color>
+    <color name="dot_active">@color/Deep_Forest_Green</color>
 
     <color name="Deep_Forest_Green">#233327</color>
     <color name="sage_green">#4C6752</color>
@@ -16,5 +18,5 @@
     <color name="Crimson_Red">#D34B4B</color>
     <color name="Soft_Rose_Pink">#F6DBDB</color>
 
-
+    <color name="card_bg">#1A000000</color>
 </resources>
