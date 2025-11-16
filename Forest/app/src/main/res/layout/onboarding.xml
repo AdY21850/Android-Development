@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <!-- Skip Button -->
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="#3C3C3C"
+        android:padding="@dimen/_6sdp"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"/>
+
+    <!-- Top Heading -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_30sdp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOREST"
+            android:textSize="@dimen/_28sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="#3C3C3C"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="be yourself"
+            android:textSize="@dimen/_16sdp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="#3C3C3C"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <!-- ViewPager and Dots Indicator -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dotsIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:dotsSize="@dimen/_6sdp"
+            app:dotsSpacing="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="@id/viewPager"
+            app:layout_constraintStart_toStartOf="@id/viewPager"
+            app:layout_constraintEnd_toEndOf="@id/viewPager"
+            android:layout_marginBottom="@dimen/_16sdp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Next Button -->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:text="Next"
+        android:textSize="@dimen/_16sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@drawable/rounded_outline_button"
+        android:backgroundTint="@null"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/Deep_Forest_Green"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

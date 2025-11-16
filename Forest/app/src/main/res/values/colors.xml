@@ -2,4 +2,19 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="Earth_Brown">#494129</color>
+    <color name="Warm_Stone">#8B8267</color>
+    <color name="Warm_Beige">#C5BCA2</color>
+    <color name="Creamy_Linen">#E4DECC</color>
+    <color name="Off_White_Cream">#FCF8EC</color>
+    <color name="Pure_Cotton_White">#FAF9F5</color>
+
+    <color name="Deep_Forest_Green">#233327</color>
+    <color name="sage_green">#4C6752</color>
+    <color name="Pastel_Green">#8EB296</color>
+    <color name="Muted_Sage_Grey">#8F9F93</color>
+    <color name="Crimson_Red">#D34B4B</color>
+    <color name="Soft_Rose_Pink">#F6DBDB</color>
+
+
 </resources>
