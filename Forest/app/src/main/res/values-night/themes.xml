@@ -1,19 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.FOREST" parent="Theme.Material3.Dark.NoActionBar">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="card_bg">#80000000</color>
 
-        <item name="colorPrimary">@color/Pastel_Green</item>
-        <item name="colorOnPrimary">@color/Deep_Forest_Green</item>
+    <color name="dot_active">#8EB296</color>
+    <color name="dot_inactive">#8F9F93</color>
 
-        <item name="colorSurface">@color/Deep_Forest_Green</item>
-
-        <item name="colorOnSurface">@color/Creamy_Linen</item>
-
-        <item name="colorOnSurfaceVariant">@color/Muted_Sage_Grey</item>
-
-        <item name="colorError">@color/Crimson_Red</item>
-        <color name="dot_inactive">@android:color/white</color>
-        <color name="dot_active">@color/Pastel_Green</color> <!-- or Deep_Forest_Green -->
-
-        <item name="android:windowBackground">@color/Deep_Forest_Green</item>
-    </style>
+    <color name="dark_primary">#8EB296</color>
+    <color name="dark_onPrimary">#233327</color>
+    <color name="dark_surface">#233327</color>
+    <color name="dark_onSurface">#E4DECC</color>
+    <color name="dark_onSurfaceVariant">#8F9F93</color>
 </resources>

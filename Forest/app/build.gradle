@@ -42,4 +42,10 @@ dependencies {
     implementation libs.sdp.android
     implementation libs.ssp.android
     implementation libs.dotsindicator
+    // Retrofit (Network)
+    implementation libs.retrofit
+    implementation 'com.squareup.retrofit2:converter-gson:3.0.0'
+
+    // Glide (Images)
+    implementation libs.glide
 }
