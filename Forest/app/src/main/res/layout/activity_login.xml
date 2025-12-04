@@ -1,10 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/gradient"
+    android:gravity="center_horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/logintext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FOREST"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="@dimen/_24sdp"
+        android:textColor="?attr/colorPrimary"
+        android:layout_marginTop="@dimen/_40sdp"
+        />
+    <TextView
+        android:id="@+id/logintext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="be yourself"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="?attr/colorPrimary"
+        android:layout_marginTop="@dimen/_4sdp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textSize="@dimen/_32ssp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_marginTop="@dimen/_40sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter your mobile number to get started , if you already have account we will find it for you."
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="?attr/colorPrimarySurface"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_32sdp"/>
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/roounded_card"
+        android:backgroundTint="#F0F0F0"
+        android:hint="+91 XXXXX XXXXX"
+        android:inputType="phone"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurfaceVariant"/>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textColor="@color/Off_White_Cream"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/roounded_card"
+        android:backgroundTint="@color/sage_green"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By continuing you agree to forest's term of Service and acknowledge"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="?attr/colorPrimarySurface"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_32sdp"/>
+</LinearLayout>

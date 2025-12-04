@@ -63,7 +63,7 @@
         android:layout_marginBottom="@dimen/_80sdp"
         app:cardCornerRadius="@dimen/_24sdp"
         app:cardElevation="@dimen/_12sdp"
-        app:cardBackgroundColor="@color/card_bg"
+        app:cardBackgroundColor="@color/Deep_Forest_Green"
         app:layout_constraintBottom_toTopOf="@id/dotsIndicator">
 
         <LinearLayout
