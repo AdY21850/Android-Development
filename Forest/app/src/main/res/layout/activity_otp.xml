@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:padding="@dimen/_20sdp">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:src="@drawable/ic_arrow_back"
+        app:tint="?attr/colorOnSurface"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"/>
+    <LinearLayout
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_40sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOREST"
+            android:textSize="@dimen/_20ssp"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="be yourself"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm your phone number"
+        android:textSize="@dimen/_20ssp"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="?attr/colorOnSurface"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_40sdp"/>
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="wrap_content"
+        android:text="Enter the 4-digit confirmation code that we sent you by SMS."
+        android:textAlignment="center"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_12sdp"/>
+
+    <LinearLayout
+        android:id="@+id/otpContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_40sdp">
+
+        <EditText
+            android:id="@+id/otp1"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@drawable/bg_otp_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/_24ssp"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+
+        <EditText
+            android:id="@+id/otp2"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@drawable/bg_otp_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/_24ssp"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+
+        <EditText
+            android:id="@+id/otp3"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@drawable/bg_otp_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/_24ssp"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+
+        <EditText
+            android:id="@+id/otp4"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@drawable/bg_otp_box"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="@dimen/_24ssp"
+            android:textColor="?attr/colorOnSurface"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Having trouble? Resend code"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        app:layout_constraintTop_toBottomOf="@id/otpContainer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_24sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

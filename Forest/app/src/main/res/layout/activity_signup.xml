@@ -1,10 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".signup">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/gradient">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finish setting up"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We need a few more details to personalize your experience."
+            android:textSize="16sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:layout_marginBottom="8dp"
+            android:textColor="?attr/colorOnSurface"/>
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_outline_button"
+            android:backgroundTint="#F0F0F0"
+            android:paddingStart="16dp"
+            android:hint="e.g. Anastasia"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:layout_marginBottom="8dp"
+            android:textColor="?attr/colorOnSurface"/>
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_outline_button"
+            android:backgroundTint="#F0F0F0"
+            android:paddingStart="16dp"
+            android:hint="name@example.com"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Address"
+            android:layout_marginBottom="8dp"
+            android:textColor="?attr/colorOnSurface"/>
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_outline_button"
+            android:backgroundTint="#F0F0F0"
+            android:paddingStart="16dp"
+            android:hint="Street, City, Country"
+            android:layout_marginBottom="32dp"/>
+
+        <Button
+            android:id="@+id/btnCompleteSignup"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Get Started"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_outline_button"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="?attr/colorOnPrimary"/>
+
+    </LinearLayout>
